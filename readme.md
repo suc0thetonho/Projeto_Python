@@ -19,4 +19,6 @@ Bibliotecas
     Apenas configurando o Repositorio do Git e GitHub
     Adicionando arquivo Main, onde iremaos fazer as chamadas das funções e criando a primeira função
     
+27/11/2024
 
+    alterei a forma, das funções onde tenho criado um arquivo para cada função, e alem criei um mini-sistema de login utilizando arquivo.txt

@@ -1,4 +1,4 @@
-from cadastro_login import cadastro, load_cadastros, salvar_cadastro
+from cadastro_login import cadastro, load_cadastros
 from clear import clear_screen
 from interface_options import cadastro_interface, login_interface
 

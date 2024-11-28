@@ -3,6 +3,7 @@ import time
 
 
 cadastro = []
+usuario = None
 
 
 #salvar o cadatro em um arquivo
@@ -28,13 +29,12 @@ def load_cadastros():
                     if len(linha) == 2:
                         login, senha = linha
                         cadastro.append({"login": login.strip(), "senha": senha.strip()})
+                        return usuario == login
             break  # Se carregado com sucesso, sai do loop
         except FileNotFoundError:
             time.sleep(1)  # Aguarda 1 segundo antes de tentar novamente
             retries += 1
     
-
-#def deposito():
 
 
 

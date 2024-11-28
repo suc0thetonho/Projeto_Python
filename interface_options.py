@@ -1,4 +1,5 @@
-from cadastro_login import salvar_cadastro, cadastro, load_cadastros
+from cadastro_login import salvar_cadastro, cadastro
+from interface_usuario import interface_usuario
 from clear import clear_screen
 import time
 
@@ -65,7 +66,7 @@ def login_interface():
                 print("Login realizado com sucesso!")
                 time.sleep(1)
                 clear_screen()
-                return   # Retorna True para indicar que o login foi bem-sucedido
+                interface_usuario(login)
         else:
             print("Login ou senha incorretos! Tente novamente.")
             time.sleep(1)
