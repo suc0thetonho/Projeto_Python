@@ -4,11 +4,12 @@
 cadastro = []
 
 
-
+#salvar o cadatro em um arquivo
 def salvar_cadastro(login, senha):
     with open("user_login.txt", "a") as arquivo:
         arquivo.write(f"{login}:{senha}\n")
 
+#colocar os arquivos numa lista
 def load_cadastros():
     try:
         with open('user_logins.txt', 'r') as arquivo:
@@ -19,3 +20,6 @@ def load_cadastros():
                     cadastro.append({"login": login.strip(), "senha": senha.strip()})
     except FileNotFoundError:
         pass
+
+def deposito():
+    
